@@ -1,0 +1,42 @@
+h1{
+	text-align: center;
+	color: purple;
+	size: 20px;
+}
+.color img{
+	text-align: center;
+	margin: 10px auto 20px;
+	display: block;
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-webkit-transition: all 1s ease;
+
+}
+
+.color img:hover{
+filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 1s ease;
+}
+.container {
+  position: absolute;
+  top: 80%;
+  left:10%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+.ghost{
+	position: absolute;
+	animation: myfirst 5s infinite;
+	animation-direction: alternate;	
+}
+
+@keyframes myfirst {
+	0% {left: 0px;}
+	25% {left: 325px;}
+	50%{left: 650px;}
+	75%{left: 975px;}
+	100%{left: 1300px;}
+}
